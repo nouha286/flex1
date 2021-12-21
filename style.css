@@ -1,0 +1,38 @@
+.row
+{
+    width: 100%;
+    border: 3px dashed red;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+.column
+{
+    border: 3px dashed green;
+    flex:  25%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.column img
+{
+    width: 100%;
+}
+/**********************responsivité************/
+@media (max-width:800px)
+{
+    .column
+    {
+        flex: 50%;
+    }
+}
+
+@media (max-width:600px)
+{
+    .column
+    {
+        flex: 100%;
+    }
+}
+
